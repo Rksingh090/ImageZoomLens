@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.product {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container {
+    overflow: hidden;
+    position: relative;
+    height: 600px;
+    aspect-ratio: 1;
+}
+
+.image-container>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.zoom-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.lens {
+    height: 200px;
+    pointer-events: none;
+    width: 200px;
+    z-index: 877;
+    /* color: rgb(210, 2, 3) ; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.288);
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    border-radius: 1000px;
+    background-position: 0% 0%;
+    background-size: 1000%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
